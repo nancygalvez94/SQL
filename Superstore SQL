@@ -1,0 +1,18 @@
+#1- I wrote an SQL query that orders products by price.
+SELECT item_name, price
+FROM superstore
+ORDER BY price;
+
+#2- I wrote an SQL query that shows an object's maximum price. 
+SELECT MAX (price)
+FROM superstore;
+
+#3- I wrote an SQL query that shows the average price of an item in the Kitchen Supplies category.
+SELECT avg(price) 
+FROM superstore 
+WHERE category="Kitchen Supplies";
+
+#4- I wrote an SQL query that shows the average price of an item in the Electronics category.
+SELECT avg(price) 
+FROM superstore 
+WHERE category="Electronics";
